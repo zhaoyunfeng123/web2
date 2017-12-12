@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表格</title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+		*{
+			font-size: 36px;
+		}
+		tr{
+			height: 30px;
+		}
+	</style>
+	<script>
+	    var tables=document.getElementsByTagName("table");
+	    
+	    function tj(){
+	    	var t=tables[0];
+	    	var tr=document.createElement("tr");
+	    	t.appendChild(tr);
+
+	    	for(var i=0;i<12;i++){
+	    		var td=document.createElement("td");
+	    		tr.appendChild(td);
+	    	}
+	    }
+	    function sc(){
+	    	var t=tables[0];
+	    	t.id="tt";
+	    	var tr=document.getElementById("tt").lastChild;
+	    	tr.parentNode.removeChild(tr);
+	    }
+	</script>
+</head>
+<body>
+	<table width="1000px" border="1">
+		<tr height="30px">
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+	</table>
+	<input type="button" name="" id="add" value="添加一行" style="margin-left:840px;" onclick="tj();"/>
+	<input type="button" name="" id="delete" value="删除一行" style="margin-left:840px;" onclick="sc();"/>
+</body>
+</html>
