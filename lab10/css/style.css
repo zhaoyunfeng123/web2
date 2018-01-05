@@ -1,0 +1,126 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font:14px '宋体';
+	color:#522a06;
+	margin:0 auto;
+	padding:0px;
+    background-image:url(../images/bodybg.gif);
+}
+a{
+    text-decoration:none;
+    color:#522a06;
+}
+a:hover{
+    text-decoration:underline;
+}
+.banner_img{
+    width:1536px;
+    height:406px;
+}
+#nav{
+    position:relative;
+    width:1536px;
+    top:-40px;
+	height:50px;
+	background-image:url(../images/nav.jpg);
+}
+
+.nav_content_a{color:#f9f603;}
+.nav_content_b{color:#fff;}
+.nav_content a{
+    line-height:40px;
+}
+.nav_content a:hover{
+    color:#f9f603;
+    text-decoration:none;
+}
+.nav_search{
+    float:left;
+    position:relative;
+    top:14px;
+    left:-70px;
+}
+.nav_search_a{
+    width:140px;
+    height:19px;
+    background-color:#f8f5ee;
+}
+.nav_search_b{
+    width:44px;
+    height:21px;
+    background-color:#000;
+    color:#fff;
+    border:1px solid #f8f5ee;
+}
+/*页脚部分*/
+#footer{
+    height:126px;
+    background-image:url(../images/foot.gif);
+    clear:both;
+}
+#footer{
+    padding-top:20px;
+    padding-left:550px;
+}
+#footer ul li{
+    list-style-type:none;
+    float:left;
+    font-size:14px;
+    font-weight:bolder;
+}
+.footer_a{
+    position:relative;
+    left:80px;
+}
+.footer_b{
+    position:relative;
+    left:120px;
+}
+.nav_content{
+    float:left;
+    width:1200px;
+    font-size:20px;
+    padding:6px;
+    font-weight:bold;  
+    position:relative;;
+    left:160px; 
+}
+#nav_content_ul{
+    margin-left: 50px;
+    list-style:none;
+    line-height:27px;
+    }
+#nav_content_ul a:link,#nav_content_ul a:visited{
+    display:block;
+    width:100px;
+    color: #fff;
+    text-align:center;
+    text-decoration:none;
+    
+    }
+#nav_content_ul a:hover{
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+    background:#999;
+    }
+#nav_content_ul ul{list-style: none;}
+#nav_content_ul li{
+    float:left;
+    width: 100px;
+    }
+#nav_content_ul li ul li a:hover{
+    background:#C00;
+    }
+
+#nav_content_ul li ul{
+    display:none;
+    }
+#nav_content_ul li.subMenuShow ul{
+    display:block;
+    }
+#nav_content_ul li.subMenuShow ul a{color:#666;}
+#nav_content_ul li.subMenuShow ul a:hover{color:#fff;}
